@@ -54,3 +54,14 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+.profile-photo {
+    text-align: center; /* Pusatkan foto */
+    margin: 20px 0; /* Beri jarak atas dan bawah */
+}
+
+.profile-photo img {
+    border-radius: 10px; /* Tambahkan sudut melengkung */
+    border: 3px solid #333; /* Tambahkan border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan shadow */
+}
