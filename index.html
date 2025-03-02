@@ -7,39 +7,115 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        
-        <h1>Hendra Kurniawan</h1>
-        <p>Curriculum Vitae</p>
-    </header>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="profile">
+                <img src="assets/profile.jpg" alt="Foto Profil" class="profile-img">
+                <div class="info">
+                    <h1>Hendra Kurniawan</h1>
+                    <p class="email">e: hendrakurniawann46 AT gmail.com</p>
+                </div>
+            </div>
+        </header>
 
-    <div class="profile-photo">
-        <img src="assets/profile.jpg" alt="Foto Profil" width="150" height="200">
+        <hr class="thick-divider"> <!-- Garis tebal -->
+
+        <!-- Profile -->
+        <section class="profile-section">
+            <h2>Profile</h2>
+            <p>
+                Hendra Kurniawan, an experienced individual in the manufacturing industry, 
+                has a diverse work history. With 3 years of experience working in Japan as a CNC Machinist in 
+                a company specializing in the production of mold plates for car components, Hendra then transitioned 
+                to a role as a Maintenance Otomation Technician at PT Panasonic Industrial Devices Batam, 
+                a Semiconductor manifacturing company, where he worked for 2 years. 
+                Currently, he is working at PT Sumitomo Wiring Systems Batam Indonesia as a Design Development. 
+                While studying at Batam Politechnic with the accumulation IPK of 3.65 in 7 smester. 
+                Hendra is committed to continue learning and growing in his career
+            </p>
+        </section>
+
+        <hr class="thin-divider"> <!-- Garis tipis -->
+
+        <!-- Education -->
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Batam Polytechnic</strong> – Bachelor’s Degree in Electronic Engineering Technology (2021 - Present)
+                    <p>Currently pursuing a Bachelor's degree, completed 7 semesters with a GPA of 3.65.  </p>
+                    <p> Focus : 3D Design, Internet of Things (IoT), and Machine Learning.</p>
+                    <p><b>Final Project:</b> "Application of the CNN Method in an Eye Movement Detection System to Optimize Smart Door Lock."</p>
+                </li>
+                <li>
+                    <strong>SMK Negeri 1 Batam</strong> – Mechanical Engineering (2014 - 2017)
+                    <p>Specialized in 3D Design, CNC Machining, and Engineering Fundamentals.</p>
+                    <p><b>Achievements:</b> Bronze Medalist in the 2016 Lomba Kompetensi Siswa (LKS) – Prototype Modelling Competition.</p>
+                </li>
+            </ul>
+        </section>
+
+        <hr class="thin-divider">
+
+        <!-- Experience -->
+        <section class="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>PT Sumitomo Wiring Systems Batam Indonesia</strong> – Development Design (Present)
+                    <p>Focusing on Design Development for automotive wiring systems.</p>
+                </li>
+                <li>
+                    <strong>PT Panasonic Industrial Devices Batam</strong> – Maintenance Automation Technician (2 Years)
+                    <p>Responsible for maintaining and improving automation processes in semiconductor manufacturing.</p>
+                </li>
+                <li>
+                    <strong>Japan (Confidential Company)</strong> – CNC Machinist (3 Years)
+                    <p>Worked in mold plate production for car components.</p>
+                </li>
+            </ul>
+        </section>
+
+        <hr class="thin-divider">
+
+        <!-- Projects -->
+        <section class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Smart Door Lock System using Eye Movement Detection</strong>  
+                    <p>Developed a real-time security system using Raspberry Pi and CNN-based image classification to recognize eye movements for authentication.</p>
+                </li>
+                <li>
+                    <strong>Enhancing Vehicle Security in Rental Cars for Renters and Owners Using IoT-Based Speed Alarm and GPS Tracking</strong>  
+                    <p>This device improves rental car security with a speed alarm that triggers a buzzer and sends notifications when speed limits are exceeded, GPS tracking to monitor location, and an engine cutoff feature if the car isn't returned within 24 hours, reducing risks of theft, damage, and accidents.</p>
+                </li>
+            </ul>
+        </section>
+
+        <hr class="thin-divider">
+
+        <!-- Skills -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>3D Design (Fusion360, SolidWorks, AutoCAD, Inventor)</li>
+                <li>IoT Development Microcontrollers(Raspberry Pi, ESP32)</li>
+                <li>Machine Learning (TensorFlow, OpenCV)</li>
+                <li>Automation & CNC Machining</li>
+                <li>PLC Basic (BNSP Certified)</li>
+                <li>Japan Language (N3 Certified)</li>
+            </ul>
+        </section>
+
+        <!-- Others -->
+        <footer>
+            <h2>Others</h2>
+            <p>
+                            <a href="https://www.linkedin.com/in/hendra-kurniawan-6b3b7b152/" target="_blank">LinkedIn</a>
+            </p>
+        </footer>
     </div>
-    
-    <section id="about">
-        <h2>Tentang Saya</h2>
-        <p>Deskripsi singkat tentang diri Anda.</p>
-    </section>
-
-    <section id="experience">
-        <h2>Pengalaman</h2>
-        <ul>
-            <li><strong>Perusahaan A</strong> - Posisi (Tahun) - Deskripsi singkat tentang pekerjaan Anda.</li>
-            <li><strong>Perusahaan B</strong> - Posisi (Tahun) - Deskripsi singkat tentang pekerjaan Anda.</li>
-        </ul>
-    </section>
-
-    <section id="education">
-        <h2>Pendidikan</h2>
-        <ul>
-            <li><strong>Universitas A</strong> - Jurusan (Tahun) - Deskripsi singkat tentang pendidikan Anda.</li>
-            <li><strong>Sekolah B</strong> - Jurusan (Tahun) - Deskripsi singkat tentang pendidikan Anda.</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>Kontak: <a href="mailto:email@example.com">email@example.com</a></p>
-    </footer>
 </body>
 </html>

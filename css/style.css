@@ -1,67 +1,107 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: #F0F0F0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+header .profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.email {
+    text-align: right;
+    color: #555;
+}
+
+/* Sections */
+section {
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 1.5rem;
     color: #333;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 2rem 0;
-    text-align: center;
+/* Profile paragraph */
+.profile-section p {
+    text-align: justify;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+/* Lists */
+ul {
+    list-style-type: none;
+    padding-left: 15px;
 }
 
-header p {
-    margin: 0;
-    font-size: 1.2rem;
+ul li {
+    margin-bottom: 10px;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ul li strong {
+    font-size: 1.1rem;
 }
 
-section h2 {
-    margin-top: 0;
+/* Thick & Thin Dividers */
+.thick-divider {
+    border: 0;
+    height: 4px;
+    background: #1E90FF;
+    margin: 20px 0;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.thin-divider {
+    border: 0;
+    height: 2px;
+    background: #1E90FF;
+    margin: 20px 0;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-.profile-photo {
-    text-align: center; /* Pusatkan foto */
-    margin: 20px 0; /* Beri jarak atas dan bawah */
-}
-
-.profile-photo img {
-    border-radius: 10px; /* Tambahkan sudut melengkung */
-    border: 3px solid #333; /* Tambahkan border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan shadow */
+/* Fade-in Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
